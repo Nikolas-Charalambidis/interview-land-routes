@@ -1,0 +1,13 @@
+server:
+  port: 8080
+  error:
+    include-message: always
+    include-binding-errors: always
+    include-stacktrace: on_trace_param
+    include-exception: true
+  
+rest:
+  config:
+    mledoze-countries:
+      name: mledoze-countries
+      url: https://raw.githubusercontent.com/mledoze/countries

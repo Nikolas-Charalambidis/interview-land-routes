@@ -1,0 +1,51 @@
+---
+openapi: 3.0.0
+info:
+  description: "Routing API"
+  version: "1.0.0"
+  title: "Routing"
+  contact:
+    email: "nikolas.charalambidis@gmail.com"
+tags:
+  - name: "Routing"
+    description: "Routing"
+paths:
+  /routing/{origin}/{destination}:
+    get:
+      tags:
+        - "Routing"
+      summary: "Returns a list of border crossings to get from origin to destination"
+      description: ""
+      operationId: "originDestination"
+      parameters:
+        - name: "origin"
+          in: "path"
+          description: "Origin country"
+          schema:
+            type: string
+          required: true
+        - name: "destination"
+          in: "path"
+          description: "Destination country"
+          schema:
+            type: string
+          required: true
+      responses:
+        200:
+          description: the specific project successfully retrieved
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Route'
+        400:
+          description: "Invalid request"
+
+components:
+  schemas:
+    Route:
+      type: object
+      properties:
+        routes:
+          type: array
+          items:
+            type: "string"
