@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.com/Nikolas-Charalambidis/interview-land-routes.svg?branch=master)](https://travis-ci.com/Nikolas-Charalambidis/interview-land-routes)
+[![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/Nikolas-Charalambidis/react-hooks/blob/master/LICENSE)
+
 # Interview: Land routes
 
 - **ℹ I am not about to disclose the name of the interviewing company**
@@ -92,7 +95,19 @@ Let's try some interesting combinations:
  - Let's not leave Czechia: `/routing/CZE/CZE` results in `"CZE"`
  - Let's not leave an island: `/routing/GRL/GRL` results in `"GRL"`
 
-### Personal rating
+_____________
+
+## Things to improve 
+
+ - **SonarCloud**: I thought of integrating the project to SonarCloud, however, I am quite tired and busy this weekend. 
+ - **Algorithm**: I feel the algorithm would be faster if the search happens from both `origin` **and** `destination` continuously, 
+ i.e. the number of visited countries during the search might be reduced. I may be wrong at this one, though.
+ - **Integration test**: Yeah, I omitted them.
+ - **Swagger UI**: I had a trouble configuring Swagger UI. Maybe next time.
+
+____________
+
+## Personal rating
 
 At the first glance, it looked like a simple REST client and server application based on Spring Boot where 
 I had a chance to show off the various ways of integration, DTO mapping, error handling, code generating, 
