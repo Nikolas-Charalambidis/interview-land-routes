@@ -123,10 +123,8 @@ Sadly, the task specification explicitly states *"Algorithm needs to be efficien
 - Implementation requirements: 3/5
 - Task complexity: 3/5
 - Time consuming: 3/5 (between 4h to 8h depending on the seniority)
-
 - Recommended tech-stack: 4/5
 - Freedom of tech-stack choice: 5/5
-
 - Task creativity and idea: 4/5
 - Real use-case: 4/5
 
