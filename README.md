@@ -52,7 +52,7 @@ A simple GET endpoint is the only choice for this use-case.
 It means the annotation processors must be configured in `maven-compiler-plugin`. 
 - **Package structure** is simply [layered](https://phauer.com/2020/package-by-feature/#package-by-layer). 
 I use standard Spring beans implementing an interface and autowiring by constructor (except the test classes).
-- **Automation** only consists of a single `.travis.yml` file which runs tests on Travis-CI.
+- **Automation** is based on GitHub Actions and SonarCloud integration for code coverage.
 - **Search algorithm** is a breadth-first search in an unweighted graph remembering visited notes to avoid cycling.
 I initially thought of finding an implementation of the Dijsktra's algorithm, 
 but it would be overkill since the length of edges are in this case equal to 1 and each other.
