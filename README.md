@@ -104,7 +104,7 @@ Sadly, the task specification explicitly states *"Algorithm needs to be efficien
 
 **Ratings**:
 - Recommended tech-stack: 4/5
-- Task creativity and idea: 3/5
-- Real use-case: 3/5
+- Task creativity and idea: 4/5
+- Real use-case: 4/5
 - Implementation requirements: 3/5
 
