@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/Nikolas-Charalambidis/interview-land-routes.svg?branch=master)](https://travis-ci.com/Nikolas-Charalambidis/interview-land-routes)
+![example workflow](https://github.com/nikolas-charalambidis/interview-land-routes/actions/workflows/build.yml/badge.svg)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/eb860f37eb614244af8612c5d590ba16)](https://www.codacy.com/gh/Nikolas-Charalambidis/interview-land-routes/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Nikolas-Charalambidis/interview-land-routes&amp;utm_campaign=Badge_Grade)
 [![codebeat badge](https://codebeat.co/badges/96851e8a-c54b-4da2-af22-c86814a44ded)](https://codebeat.co/projects/github-com-nikolas-charalambidis-interview-land-routes-master)
 [![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/Nikolas-Charalambidis/react-hooks/blob/master/LICENSE)
@@ -99,13 +99,11 @@ _____________
 
 ## Things to improve 
 
- - **SonarCloud**: I thought of integrating the project to SonarCloud using JaCoCo for code coverage, however, I am quite tired and busy this weekend. 
  - **Algorithm**: I feel the algorithm would be faster if the search happens from both `origin` **and** `destination` continuously, 
  i.e. the number of visited countries during the search might be reduced. I may be wrong at this one, though.
  - **Integration test**: Yeah, I omitted them.
  - **Swagger UI**: I had a trouble configuring Swagger UI. Maybe next time.
- - **GitHub Actions**: It's a new Travis-CI and definitely a thing to try out.
-
+ 
 ____________
 
 ## Personal rating
