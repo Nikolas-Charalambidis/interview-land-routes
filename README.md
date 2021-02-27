@@ -33,31 +33,32 @@ _________
 
 ## Solution
 
-I have created simple Spring Boot application exposing a REST endpoint with a logic of routing between countries. 
-A list of countries with the borders is available at another endpoint. So the application serves both as a REST server and REST client.
+I have created a simple Spring Boot application exposing a REST endpoint with a logic of routing between countries. 
+A list of countries with borders is available at another endpoint. So the application serves both as a REST server and REST client.
 
 ### Libraries and implementation
 - **REST client** using **Spring Cloud OpenFeign** for a REST client to the single [endpoint](https://raw.githubusercontent.com/mledoze/countries/master/countries.json). 
 DTO object is mapped manually. Since the media type is `text/plain` from the Github raw-content, 
 there is required an additional `MappingJackson2HttpMessageConverter` configured in the global `FeignConfiguration`.
 - **REST server** is generated from the OpenApi specification using **OpenAPI generator Maven plugin**. 
-The controller layer with the models are available on the classpath once generated. 
+The controller layer with the models is available on the classpath once generated. 
 A simple GET endpoint is the only choice for this use-case.
 - **DTO mapping** and object boilerplate generation is done using a strong combo **MapStruct** and **Lombok**. 
 It means the annotation processors must be configured in `maven-compiler-plugin`. 
 - **Package structure** is simply [layered](https://phauer.com/2020/package-by-feature/#package-by-layer). 
 I use standard Spring beans implementing an interface and autowiring by constructor (except the test classes).
-- **Automation** is only consisted of a single `.travis.yml` file which runs tests on Travis-CI.
+- **Automation** only consists of a single `.travis.yml` file which runs tests on Travis-CI.
 - **Search algorithm** is a breadth-first search in an unweighted graph remembering visited notes to avoid cycling.
-I initially though of finding an implementation of the Dijsktra's algorithm, 
-but it would be an overkill since the length of edges are in this case equal to 1 and each other.
+I initially thought of finding an implementation of the Dijsktra's algorithm, 
+but it would be overkill since the length of edges are in this case equal to 1 and each other.
 Although, in the reality, the solution might not offer the shortest path but rather a path with the least borders crossing 
 (let's say we do an application for some drug-traffickers to help them to minimize risks).
 I started up with this [answer](https://stackoverflow.com/a/1579508/3764965) on StackOverflow 
 and modified it to match my data structure and 
 optimized it a bit to cut off unnecessary searches as long the algorithm is based on the breath-first search.
+I suck in these things, so I rather searched for something that works, and I can modify it for my needs.
 - **Optimization** and **validations** are also done. It makes no sense to search for a land route between the USA and Japan. 
-In `Region` enum class, I implemented a simple check used later whether it makes sense to look up for the shortest path between the countries.
+In `Region` enum class, I implemented a simple check used later whether it makes sense to search for the shortest path between the countries.
 Also, if the country doesn't exist in the data set returned from the [endpoint](https://raw.githubusercontent.com/mledoze/countries/master/countries.json) 
 or there is surely no way to get from an origin to the destination by feet. 
 
@@ -92,4 +93,18 @@ Let's try some interesting combinations:
  - Let's not leave an island: `/routing/GRL/GRL` results in `"GRL"`
 
 ### Personal rating
+
+At the first glance, it looked like a simple REST client and server application based on Spring Boot where 
+I had a chance to show off the various ways of integration, DTO mapping, error handling, code generating, 
+testing etc.
+
+However, after studying the [endpoint](https://raw.githubusercontent.com/mledoze/countries/master/countries.json) data structure and 
+the task consisted of finding the shortest route which eventually led to one of the graph search algorithms. 
+Sadly, the task specification explicitly states *"Algorithm needs to be efficient"* but nothing saying the code should be readable, maintainable, automated, and tested. This rather brings me back to the algorithm books over discovering new and modern ways to get things done. I have to admit I highly appreciate masking yet another graph algorithm into a real use-case using an external API (or a JSON at least), though. The task was fun!
+
+**Ratings**:
+- Recommended tech-stack: 4/5
+- Task creativity and idea: 3/5
+- Real use-case: 3/5
+- Implementation requirements: 3/5
 
