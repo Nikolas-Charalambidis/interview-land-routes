@@ -115,7 +115,7 @@ I had a chance to show off the various ways of integration, DTO mapping, error h
 testing etc.
 
 However, after studying the [endpoint](https://raw.githubusercontent.com/mledoze/countries/master/countries.json) data structure, and seeing 
-the task is all about of finding the shortest route which eventually led to one of the graph search algorithms. 
+the task is all about finding the shortest route which eventually led to one of the graph search algorithms. 
 Sadly, the task specification explicitly states *"Algorithm needs to be efficient"* but nothing saying the code should be readable, maintainable, automated, and tested. This rather brings me back to the algorithm books over discovering new and modern ways to get things done. I have to admit I highly appreciate masking yet another graph algorithm into a real use-case using an external API (or a JSON at least), though. The task was fun!
 
 **Ratings**:
