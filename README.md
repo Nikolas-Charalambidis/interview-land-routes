@@ -100,7 +100,7 @@ _____________
 
 ## Things to improve 
 
- - **SonarCloud**: I thought of integrating the project to SonarCloud, however, I am quite tired and busy this weekend. 
+ - **SonarCloud**: I thought of integrating the project to SonarCloud using JaCoCo for code coverage, however, I am quite tired and busy this weekend. 
  - **Algorithm**: I feel the algorithm would be faster if the search happens from both `origin` **and** `destination` continuously, 
  i.e. the number of visited countries during the search might be reduced. I may be wrong at this one, though.
  - **Integration test**: Yeah, I omitted them.
