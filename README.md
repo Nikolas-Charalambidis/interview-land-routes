@@ -119,8 +119,14 @@ the task is all about finding the shortest route which eventually led to one of 
 Sadly, the task specification explicitly states *"Algorithm needs to be efficient"* but nothing saying the code should be readable, maintainable, automated, and tested. This rather brings me back to the algorithm books over discovering new and modern ways to get things done. I have to admit I highly appreciate masking yet another graph algorithm into a real use-case using an external API (or a JSON at least), though. The task was fun!
 
 **Ratings**:
+
+- Implementation requirements: 3/5
+- Task complexity: 3/5
+- Time consuming: 3/5 (between 4h to 8h depending on the seniority)
+
 - Recommended tech-stack: 4/5
+- Freedom of tech-stack choice: 5/5
+
 - Task creativity and idea: 4/5
 - Real use-case: 4/5
-- Implementation requirements: 3/5
 
