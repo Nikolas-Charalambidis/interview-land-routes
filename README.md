@@ -1,4 +1,5 @@
 ![example workflow](https://github.com/nikolas-charalambidis/interview-land-routes/actions/workflows/build.yml/badge.svg)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=Nikolas-Charalambidis_interview-land-routes&metric=coverage)](https://sonarcloud.io/dashboard?id=Nikolas-Charalambidis_interview-land-routes)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/eb860f37eb614244af8612c5d590ba16)](https://www.codacy.com/gh/Nikolas-Charalambidis/interview-land-routes/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Nikolas-Charalambidis/interview-land-routes&amp;utm_campaign=Badge_Grade)
 [![codebeat badge](https://codebeat.co/badges/96851e8a-c54b-4da2-af22-c86814a44ded)](https://codebeat.co/projects/github-com-nikolas-charalambidis-interview-land-routes-master)
 [![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/Nikolas-Charalambidis/react-hooks/blob/master/LICENSE)
