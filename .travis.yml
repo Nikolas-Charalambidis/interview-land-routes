@@ -6,4 +6,4 @@ cache:
     - "$HOME/.m2/repository"
 
 install: true
-script: ./mvnw clean install sonar:sonar
+script: ./mvnw clean install
