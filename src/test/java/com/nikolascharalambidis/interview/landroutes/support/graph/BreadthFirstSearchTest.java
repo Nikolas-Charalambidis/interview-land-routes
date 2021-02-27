@@ -71,7 +71,7 @@ class BreadthFirstSearchTest {
 	void testIsolatedCountry() {
 		var o1 = COUNTRY_MAP.get("o1");
 		var o4 = COUNTRY_MAP.get("o4");
-		Assertions.assertThrows(NoPathException.class,
-			() -> new BreadthFirstSearch(COUNTRY_MAP, o1, o4).paths());
+		var search = new BreadthFirstSearch(COUNTRY_MAP, o1, o4);
+		Assertions.assertThrows(NoPathException.class, search::paths);
 	}
 }
