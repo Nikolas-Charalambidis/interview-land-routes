@@ -104,6 +104,7 @@ _____________
  i.e. the number of visited countries during the search might be reduced. I may be wrong at this one, though.
  - **Integration test**: Yeah, I omitted them.
  - **Swagger UI**: I had a trouble configuring Swagger UI. Maybe next time.
+ - **GitHub Actions**: It's a new Travis-CI and definitely a thing to try out.
 
 ____________
 
