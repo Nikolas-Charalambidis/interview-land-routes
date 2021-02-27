@@ -14,13 +14,16 @@
 		<maven.compiler.source>11</maven.compiler.source>
 		<maven.compiler.target>11</maven.compiler.target>
 
+		<sonar.projectKey>Nikolas-Charalambidis_interview-land-routes</sonar.projectKey>
+		<sonar.organization>nikolas-charalambidis</sonar.organization>
+		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
+
 		<org.mapstruct.version>1.4.2.Final</org.mapstruct.version>
 		<org.projectlombok.version>1.18.16</org.projectlombok.version>
 		<spring-cloud.version>2020.0.1</spring-cloud.version>
 		<springfox-version>2.9.2</springfox-version>
 		<swagger-codegen.version>3.0.24</swagger-codegen.version>
 		<swagger-core-version>1.5.24</swagger-core-version>
-		<junit.jupiter.version>5.5.2</junit.jupiter.version>
 
 		<api.basedir>${project.basedir}/src/main/resources/api</api.basedir>
 
