@@ -86,8 +86,6 @@ The only prerequisite is Java 11.
    curl --request GET \
     --url http://localhost:8080/routing/CZE/ITA
    ```
-   
- - Swagger UI is available at ``
 
 Let's try some interesting combinations:
  - A route between Czechia and Italy: `/routing/CZE/ITA` results in `"CZE","AUT","ITA"`
