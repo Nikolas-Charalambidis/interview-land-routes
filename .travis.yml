@@ -15,4 +15,4 @@ before_install:
   - chmod +x mvnw
 
 install: true
-script: ./mvnw clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.projectKey=interview-land-routes
+script: ./mvnw clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.projectKey=Nikolas-Charalambidis_interview-land-routes
