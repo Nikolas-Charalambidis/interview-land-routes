@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.com/Nikolas-Charalambidis/interview-land-routes.svg?branch=master)](https://travis-ci.com/Nikolas-Charalambidis/interview-land-routes)
+[![codebeat badge](https://codebeat.co/badges/96851e8a-c54b-4da2-af22-c86814a44ded)](https://codebeat.co/projects/github-com-nikolas-charalambidis-interview-land-routes-master)
 [![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/Nikolas-Charalambidis/react-hooks/blob/master/LICENSE)
 
 # Interview: Land routes
