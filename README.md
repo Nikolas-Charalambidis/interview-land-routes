@@ -5,7 +5,7 @@
 
 # Interview: Land routes
 
-- **ℹ I am not about to disclose the name of the interviewing company**
+- **ℹ I am not about to disclose the name of the interviewing company. I am not a creator of the task.**
 - **ℹ No longer improved and left as delivered** (except typos or merging/splitting repos and relevant changes).
 
 ## Task
