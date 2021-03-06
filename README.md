@@ -8,12 +8,21 @@
 - **⚠ No longer improved and left as delivered** (except typos or merging/splitting repos and relevant changes).
 - **ℹ I am not about to disclose the name of the interviewing company. I am not a creator of the task.**
 
+## Table of contents
+- [Task](#task)
+- [Solution](#solution)
+  * [Libraries and implementation](#libraries-and-implementation)
+  * [How to run](#how-to-run)
+- [Things to improve](#things-to-improve)
+- [Personal rating](#personal-rating)
+- [Interviewer rating](#interviewer-rating)
+
 ## Task
 Your task is to create a simple Spring Boot service, that is able to calculate any possible land
 route from one country to another. The objective is to take a list of country data in JSON format
 and calculate the route by utilizing individual countries border information.
 
-### Specifications:
+**Specifications**
 - Spring Boot, Maven
 - Data link: https://raw.githubusercontent.com/mledoze/countries/master/countries.json
 - The application exposes REST endpoint /routing/{origin}/{destination} that
@@ -30,7 +39,7 @@ returns a list of border crossings to get from origin to destination
     }
     ```
 
-### Expected deliveries:
+**Expected deliveries**
 1. Source code
 2. Instructions on how to build and run the application
 
@@ -116,7 +125,7 @@ However, after studying the [endpoint](https://raw.githubusercontent.com/mledoze
 the task is all about finding the shortest route which eventually led to one of the graph search algorithms. 
 Sadly, the task specification explicitly states *"Algorithm needs to be efficient"* but nothing saying the code should be readable, maintainable, automated, and tested. This rather brings me back to the algorithm books over discovering new and modern ways to get things done. I have to admit I highly appreciate masking yet another graph algorithm into a real use-case using an external API (or a JSON at least), though. The task was fun!
 
-**Ratings**:
+**Summary**:
 
 - Implementation requirements: 3/5
 - Task complexity: 3/5
