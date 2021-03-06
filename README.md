@@ -126,3 +126,8 @@ Sadly, the task specification explicitly states *"Algorithm needs to be efficien
 - Task creativity and idea: 4/5
 - Real use-case: 4/5
 
+____________
+
+## Interviewer rating
+
+TODO
